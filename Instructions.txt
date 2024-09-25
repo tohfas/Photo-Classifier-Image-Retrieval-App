@@ -1,0 +1,36 @@
+#Instructions for installations
+
+conda create --name Image_Retriever python=3.9
+
+conda activate Image_Retriever
+
+conda install pandas
+
+conda install matplotlib
+
+conda install pillow
+
+conda install tqdm
+
+conda install requests
+
+conda install -c conda-forge transformers
+
+conda install pytorch=2.4.1 cpuonly -c pytorch
+
+conda install matplotlib
+
+conda install -c conda-forge streamlit
+
+conda install jupyter
+
+# Open VS Code
+# git clone repo_link
+# Choose the created environment as the environment with all the necesaary packages
+# Run the ipynb file
+
+
+# To run streamlit app, in the terminal type 
+
+steamlit run app.py 
+(wait for sometime as the web ui shows running, then put prompt and click on search)

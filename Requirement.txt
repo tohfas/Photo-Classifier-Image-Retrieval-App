@@ -1,0 +1,9 @@
+pandas
+matplotlib
+Pillow
+tqdm
+requests
+transformers
+torch==2.4.1
+streamlit
+jupyter
