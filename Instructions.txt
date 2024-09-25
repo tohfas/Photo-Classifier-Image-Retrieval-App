@@ -20,7 +20,19 @@ conda install pytorch=2.4.1 cpuonly -c pytorch
 
 conda install matplotlib
 
+pip install farm-haystack
+
+pip install gradio
+
 conda install -c conda-forge streamlit
+
+pip install fastapi
+
+pip install uvicorn
+
+pip install python-multipart
+
+conda install -c conda-forge jinja2
 
 conda install jupyter
 

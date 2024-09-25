@@ -6,4 +6,10 @@ requests
 transformers
 torch==2.4.1
 streamlit
+farm-haystack
+gradio
+fastapi
+uvicorn 
+python-multipart 
+jinja2
 jupyter
