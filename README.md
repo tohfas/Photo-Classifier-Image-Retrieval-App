@@ -39,7 +39,7 @@ The modified CLIP model successfully met the project's objectives by providing a
 ## Installation Instructions for Image Retriever
 
 1. **Create a new Conda environment:**
-   ```bash
+```bash
    conda create --name Image_Retriever python=3.9
    ```
 
