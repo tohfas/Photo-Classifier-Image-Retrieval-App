@@ -35,3 +35,55 @@ These modifications were designed to maintain the core strengths of the CLIP mod
 
 ## Conclusion
 The modified CLIP model successfully met the project's objectives by providing a fast and accurate photo classification system. Its ability to process large datasets and retrieve relevant images based on textual prompts in near real-time makes it a viable solution for practical applications.
+
+## Installation Instructions for Image Retriever
+
+1. **Create a new Conda environment:**
+   ```bash
+   conda create --name Image_Retriever python=3.9
+   ```
+
+2. **Activate the environment:**
+```bash
+   conda activate Image_Retriever 
+   ```
+
+3. **Install required packages:**
+```bash 
+conda install pandas
+conda install matplotlib
+conda install pillow
+conda install tqdm
+conda install requests
+conda install -c conda-forge transformers
+conda install pytorch=2.4.1 cpuonly -c pytorch
+conda install matplotlib
+```
+
+4. **Install additional Python packages:**
+```bash
+pip install farm-haystack
+pip install gradio
+pip install fastapi
+pip install uvicorn
+pip install python-multipart
+```
+
+5. **Install Jinja2 and Jupyter:**
+```bash
+conda install -c conda-forge jinja2
+conda install jupyter
+```
+
+6. **Open VS Code and clone the repository:**
+```bash
+git clone repo_link
+```
+
+7. **Choose the created environment as the environment with all the necessary packages.**
+
+8. **To run the Streamlit app: In the terminal, type:**
+```bash
+streamlit run app.py
+```
+
