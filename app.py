@@ -1,11 +1,11 @@
 import streamlit as st
-from multimodal_image_search import MultimodalSearch
+from search_script import MultimodalSearch
 from PIL import Image
 import io
 import os
 import base64
 
-# Set the layout configuration for the Streamlit page
+# Setting the layout configuration for the Streamlit page
 st.set_page_config(layout="wide")
 
 # Custom CSS for styling the app's title, background, and buttons
@@ -61,34 +61,29 @@ def image_to_base64(image_bytes):
     return base64.b64encode(image_bytes.getvalue()).decode()
 
 def main():
-    # Displaying the title of the app in the center of the page
+    # Display the title of the app in the center of the page
     st.markdown("<h1>Photo Classifier Image Retrieval App</h1>", unsafe_allow_html=True)
 
     # Initialising the MultimodalSearch class which handles text-to-image retrieval
     multimodal_image_search = MultimodalSearch()
 
-    # Creatinge a text input widget for the user to enter their search query
+    # Creating a text input widget for the user to enter their search query
     prompt = st.text_input("Enter your prompt to search images:")
 
     # Creating a button that triggers the search when clicked
     if st.button("Search"):
-        # Checking if the user has entered a valid prompt
         if len(prompt) > 0:
             results = multimodal_image_search.search_images(prompt)
             st.warning("Your query was: " + prompt)
             st.subheader("Search Results:")
 
-            if results:  # Check if results are found
+            if results:
                 # Limiting to a maximum of 5 images
                 results_to_display = results[:5]
+                cols = st.columns(len(results_to_display))  # Creating columns for each image
 
-                # Creating columns to display the images side by side
-                cols = st.columns(len(results_to_display))
-
-                # Creating as many columns as there are results
                 for i, result in enumerate(results_to_display):
                     with cols[i]:
-                        # Aligning image and button in the same column
                         # Getting image bytes for download and display image
                         image_bytes = get_image_bytes(result.content)
                         base64_image = image_to_base64(image_bytes)
@@ -101,7 +96,7 @@ def main():
                         </div>
                         """, unsafe_allow_html=True)
             else:
-                st.error("No results found.")  # Showing error if no results found
+                st.error("No results found.")  # Showinging error if no results found
         else:
             st.warning("Please enter your prompt to search images.")  # Warning if no prompt is entered
 

@@ -20,6 +20,8 @@ conda install pytorch=2.4.1 cpuonly -c pytorch
 
 conda install matplotlib
 
+conda install -c conda-forge nltk
+
 pip install farm-haystack
 
 pip install gradio
@@ -40,7 +42,9 @@ conda install jupyter
 # git clone repo_link
 # Choose the created environment as the environment with all the necesaary packages
 
-# To run streamlit app, in the terminal type 
+# 1. Firstly run embeddings_script.py 
+
+# 2. To run streamlit app, in the terminal type 
 
 steamlit run app.py 
 (wait for sometime as the web ui shows running, then put prompt and click on search)

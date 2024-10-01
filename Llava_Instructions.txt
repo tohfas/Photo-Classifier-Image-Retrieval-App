@@ -1,0 +1,11 @@
+ollama run llava
+
+ollama run llava:13b
+
+Open VS Code.+, first activate the environment you created previously and in the terminal
+
+pip install ollama
+
+Run LLava_image_retrival.player
+
+

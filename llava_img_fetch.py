@@ -8,10 +8,10 @@ model = CLIPModel.from_pretrained("openai/clip-vit-base-patch32")
 processor = CLIPProcessor.from_pretrained("openai/clip-vit-base-patch32")
 
 # Load your dataset
-df = pd.read_csv('image_descriptions1.csv')  # Replace with your actual CSV file path
+df = pd.read_csv('image_descriptions2.csv')  # Replace with your actual CSV file path
 
-# Assuming your CSV has columns 'image_path' and 'description'
-image_paths = df['image_path'].tolist()
+
+image_paths = df['image_file'].tolist()
 descriptions = df['description'].tolist()
 
 # Preprocess the images and descriptions
@@ -38,7 +38,7 @@ def search_images(prompt, image_paths, text_features, top_k=5):
     return [(image_paths[idx], similarities[idx].item()) for idx in top_k_indices]
 
 # Main interactive loop
-if _name_ == "_main_":
+if __name__ == "_main_":
     prompt = input("Enter your search prompt: ")  # Let the user input the prompt
     top_k = int(input("Enter the number of top results you want: "))
     
