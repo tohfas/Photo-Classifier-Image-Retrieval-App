@@ -1,9 +1,9 @@
 # Classification of Prompts by Granularity
 
-Let's classify the prompts used to get outputs based on **granularity levels** and **types** to demonstrate the level of accuracy or detail you're trying to capture in each prompt. We'll categorize the prompt types based on how specific or broad the description is.
+Let's classify the prompts used to get outputs based on **granularity levels** and **types** to demonstrate the level of accuracy or detail you're trying to capture in each prompt. We'll categorise the prompt types based on how specific or broad the description is.
 
 
-## **Prompt Type 1: 
+## **Prompt Type 1:**
 These are generally **broad descriptions**, indicating that the prompt is about categories of players or sports without going into fine details. The **specificity increases** as we move from a general category to specific sports.
 
 1. **Granularity Level 1: Broad Category**
@@ -17,7 +17,7 @@ These are generally **broad descriptions**, indicating that the prompt is about 
 
 
 
-## **Prompt Type 2:
+## **Prompt Type 2:**
 This type progressively adds details to describe **flowers** with increasing specificity, moving from a general description of flowers to specific types and their colors.
 
 1. **Granularity Level 1: General Category**
@@ -43,7 +43,7 @@ These prompts are about **actions or objects** associated with people, focusing 
    - *women having a camera in hand* → More specific, narrowing the focus to **women** holding cameras.
 
 
-## **Prompt Type 3: 
+## **Prompt Type 4:**
 This type describes **roles and specific attributes** related to nurses, moving from a general description of nurses to more specific details like wearing masks.
 
 1. **Granularity Level 1: Role Identification**

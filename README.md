@@ -73,7 +73,9 @@ git clone repo_link
 
 7. **Choose the created environment as the environment with all the necessary packages.**
 
-8. **To run the Streamlit app: In the terminal, type:**
+8. **After choosing environment and done with the setups, run embeddings_script.py first**
+
+9. **Next, to launch the webapp, run the Streamlit app: In the terminal, type:**
 ```bash
 streamlit run app.py
 ```
