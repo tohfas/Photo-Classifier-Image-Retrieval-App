@@ -1,4 +1,4 @@
-# Photo-Classifier
+# Photo Classifier - An Artificially Intelligent Image Retrieval System
 
 ## Introduction
 The objective of this project is to develop a photo classifier system using AI Vision models. The system processes a dataset of images, allowing users to provide textual prompts to retrieve relevant images. 
